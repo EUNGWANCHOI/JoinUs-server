@@ -1,0 +1,46 @@
+{
+  "name": "joinus-server",
+  "version": "1.0.0",
+  "description": "Express.js + TypeScript 서버",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "NODE_ENV=production node dist/index.js",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EUNGWANCHOI/JoinUs-server.git"
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "server"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EUNGWANCHOI/JoinUs-server/issues"
+  },
+  "homepage": "https://github.com/EUNGWANCHOI/JoinUs-server#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.4",
+    "@types/node": "^24.9.1",
+    "@types/cors": "^2.8.17",
+    "@types/morgan": "^1.9.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3",
+    "eslint": "^8.46.0",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0"
+  }
+}
