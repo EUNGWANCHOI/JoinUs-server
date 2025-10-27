@@ -6,7 +6,7 @@ const port = 3000;
 const shangus = express.Router();
 
 shangus.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.status(500).json({ message: "Internal Server Error" });
 });
 
 shangus.get("/user", (req, res) => {
