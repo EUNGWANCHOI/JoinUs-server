@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import todosRoutes from "./todos/routes/todos";
 
+//윈도우
 dotenv.config();
 const app = express();
 app.use(express.json());
